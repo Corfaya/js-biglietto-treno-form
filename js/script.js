@@ -17,7 +17,7 @@ btn.addEventListener("click", function () {
   // if user is a minor...
   if (age === "underage") {
     reduction = 20 / 100;
-  } // else if user is over 65
+  } // else if user is over 65...
   else if (age === "over_65") {
     reduction = 40 / 100;
   }
