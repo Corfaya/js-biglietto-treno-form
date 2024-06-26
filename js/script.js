@@ -33,3 +33,11 @@ btn.addEventListener("click", function () {
     console.log("L'utente " + completeName + " non ha diritto a uno sconto. Il suo prezzo finale è pari a " + reducedPrice + "€.");
   }
 });
+
+// HTML reset button recovery
+const reset = document.getElementById("reset");
+
+// addEventListener
+reset.addEventListener("click", function() {
+    document.querySelector(".form").reset();
+})
