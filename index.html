@@ -11,47 +11,59 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <div class="content">
-                    <h2>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
-                </div>
-            </div>
-            <div class="col-12">
-                <form class="d-flex form" action="#" method="POST">
-                    <div class="col-4">
-                        <label class="form-label" for="completeName">Nome e Cognome</label>
-                        <input class="form-control" type="text" id="completeName" name="completeName" placeholder="Digitare nome e cognome">
-                    </div>
-                    <div class="col-4">
-                        <label class="form-label" for="km">Km da percorrere</label>
-                        <input class="form-control" type="number" id="km" name="km" placeholder="Digitare numero di km da percorrere">
-                    </div>
-                    <div class="col-4">
-                        <label class="form-label" for="age">Fascia d'età</label>
-                        <select class="form-select" name="age" id="age">
-                            <option value=""></option>
-                            <option value="underage">Minorenne</option>
-                            <option value="adult">Maggiorenne</option>
-                            <option value="over_65">Over 65</option>
-                        </select>
-                    </div>
-                </form>
+    <div class="wrapper">
+        <div class="container">
+            <div class="row">
                 <div class="col-12">
-                    <div class="d-flex justify-content-center">
-                        <button id="button">Genera</button>
-                        <button id="reset">Reset</button>
+                    <div class="text-center my-3">
+                        <h2 class="text-uppercase">Calcola il prezzo del tuo biglietto</h2>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <form class="d-flex form" action="#" method="POST">
+                        <div class="col-4">
+                            <div class="d-flex flex-column align-items-center me-2">
+                                <label class="form-label" for="completeName">Nome e Cognome</label>
+                                <input class="form-control" type="text" id="completeName" name="completeName"
+                                    placeholder="Digitare nome e cognome">
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="d-flex flex-column align-items-center">
+                                <label class="form-label" for="km">Km da percorrere</label>
+                                <input class="form-control" type="number" id="km" name="km"
+                                    placeholder="KM da percorrere (numero)">
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="d-flex flex-column align-items-center ms-2">
+                                <label class="form-label" for="age">Fascia d'età</label>
+                                <select class="form-select" name="age" id="age">
+                                    <option value=""></option>
+                                    <option value="underage">Minorenne</option>
+                                    <option value="adult">Maggiorenne</option>
+                                    <option value="over_65">Over 65</option>
+                                </select>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="col-12">
+                        <div class="d-flex justify-content-center">
+                            <button class="btn" id="button">Genera</button>
+                            <button class="btn" id="reset">Reset</button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-12">
-                <div class="content"></div>
-            </div>
-            <div class="col-12">
-                <div class="content"></div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="text-center mt-5 mb-3">
+                        <h2 class="text-uppercase">Il tuo biglietto</h2>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="content"></div>
+                </div>
             </div>
         </div>
     </div>
@@ -61,8 +73,8 @@
 
 
 
-    
-    
+
+
 
     <script type="text/javascript" src="./js/script.js"></script>
 </body>
