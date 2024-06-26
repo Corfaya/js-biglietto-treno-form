@@ -25,6 +25,6 @@ btn.addEventListener("click", function() {
         console.log(reduction)
     }
     // Ticket reduced price variable declaration
-    let reducedPrice = price - ( price * reduction);
+    let reducedPrice = (price - ( price * reduction)).toFixed(2);
     console.log(reducedPrice)
 })
