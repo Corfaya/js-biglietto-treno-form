@@ -15,4 +15,13 @@ btn.addEventListener("click", function() {
     // CONDITIONAL CONSTRUCTION
     // reduction initialised to 0
     let reduction = 0;
+    // if user is a minor...
+    if (age === "underage") {
+        reduction = 20 / 100;
+        console.log(reduction)
+    } // else if user is over 65
+    else if (age === "over_65") {
+        reduction = 40 / 100;
+        console.log(reduction)
+    }
 })
