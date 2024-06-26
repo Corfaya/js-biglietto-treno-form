@@ -11,4 +11,7 @@ btn.addEventListener("click", function() {
     let costPerKm = 0.21;
     // price variable declaration
     let price = costPerKm * km;
+    // CONDITIONAL CONSTRUCTION
+    // reduction initialised to 0
+    let reduction = 0;
 })
