@@ -27,9 +27,23 @@ btn.addEventListener("click", function () {
   // Ticket reduced price variable declaration
   let reducedPrice = (price - discount).toFixed(2);
   
-  if (age === "underage" || age === "over_65") {
+  // Output
+  document.getElementById("passenger").innerHTML = `${completeName}`
+  document.getElementById("cost").innerHTML = `${reducedPrice}€`
+
+  // Conditional block for outputs
+  if (age === "underage") {
+    document.getElementById("typeOfTicket").innerHTML = `Young ticket`
+    document.getElementById("typeOfDiscount").innerHTML = `20%`
     console.log("L'utente " + completeName + " ha diritto a uno sconto di " + discount + "€. Il suo prezzo finale è pari a " + reducedPrice + "€.");
-  } else {
+  } else if(age === "over_65") {
+    document.getElementById("typeOfTicket").innerHTML = `Senior ticket`
+    document.getElementById("typeOfDiscount").innerHTML = `40%`
+    console.log("L'utente " + completeName + " ha diritto a uno sconto di " + discount + "€. Il suo prezzo finale è pari a " + reducedPrice + "€.");
+  } 
+  else {
+    document.getElementById("typeOfTicket").innerHTML = `Standard ticket`
+    document.getElementById("typeOfDiscount").innerHTML = `Nessuno`
     console.log("L'utente " + completeName + " non ha diritto a uno sconto. Il suo prezzo finale è pari a " + reducedPrice + "€.");
   }
 });
