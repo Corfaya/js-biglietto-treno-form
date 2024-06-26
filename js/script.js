@@ -1,3 +1,7 @@
+// BONUS (1)
+document.querySelector(".ticket").classList.add("ticket-none");
+// BONUS (1) END
+
 // HTML button recovery
 const btn = document.getElementById("button");
 
@@ -46,6 +50,10 @@ btn.addEventListener("click", function () {
     document.getElementById("typeOfDiscount").innerHTML = `Nessuno`
     console.log("L'utente " + completeName + " non ha diritto a uno sconto. Il suo prezzo finale è pari a " + reducedPrice + "€.");
   }
+
+  //BONUS (2)
+  document.querySelector(".ticket").classList.remove("ticket-none");
+  // BONUS (2) END
 });
 
 // HTML reset button recovery
@@ -54,4 +62,7 @@ const reset = document.getElementById("reset");
 // addEventListener
 reset.addEventListener("click", function() {
     document.querySelector(".form").reset();
+    // BONUS (3)
+    document.querySelector(".ticket").classList.add("ticket-none");
+    // BONUS (3) END
 })

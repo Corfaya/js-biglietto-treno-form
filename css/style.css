@@ -8,6 +8,8 @@
     --squid-ink: #2F3645;
     --chilean-pink: #E6B9A6;
     --gray-crayola: #939185;
+    --opaque-white: #EEEDEB;
+    --peach: #e0b09c;
 }
 
 body {
@@ -38,6 +40,16 @@ h2 {
     background-color: #939185e0;
 }
 
-.border_gray_hover:hover {
-    border: var(--gray-crayola);
+.bg-peach {
+    background-color: var(--peach);
 }
+
+.border_gray_hover:hover {
+    border: 1px solid var(--gray-crayola);
+}
+
+/* BONUS */
+.ticket-none {
+    display: none;
+}
+/* BONUS END */
