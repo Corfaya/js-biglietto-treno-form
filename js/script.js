@@ -6,7 +6,8 @@ btn.addEventListener("click", function() {
     // input data recovery
     let completeName = document.getElementById("completeName").value;
     let km = document.getElementById("km").value;
-    console.log(completeName, km)
+    let age = document.getElementById("age").value;
+    console.log(completeName, km, age)
     // cost per km variable declaration
     let costPerKm = 0.21;
     // price variable declaration
