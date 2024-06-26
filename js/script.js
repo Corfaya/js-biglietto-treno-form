@@ -24,4 +24,7 @@ btn.addEventListener("click", function() {
         reduction = 40 / 100;
         console.log(reduction)
     }
+    // Ticket reduced price variable declaration
+    let reducedPrice = price - ( price * reduction);
+    console.log(reducedPrice)
 })
